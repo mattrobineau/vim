@@ -40,6 +40,7 @@ if has("gui_running")
     colorscheme solarized
     set background=light
     if has("gui_win32")
+        " https://github.com/runsisi/consolas-font-for-powerline
         set guifont=Powerline_Consolas:h09:cANSI
         set columns=150
     else

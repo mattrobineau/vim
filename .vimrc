@@ -11,7 +11,11 @@ set encoding=utf-8
 set nocompatible    " required -- vimwiki
 filetype plugin on  " required -- vimwiki
 
-call plug#begin('~/.vim/plugged')
+if has('win32')
+  call plug#begin('~/vimfiles/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
 
 Plug 'mattrobineau/vim-monochrome'
 Plug 'vimwiki/vimwiki'
